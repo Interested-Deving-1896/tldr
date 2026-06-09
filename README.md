@@ -1,181 +1,75 @@
-<!-- markdownlint-disable MD041 -->
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# tldr
 
-<div align="center">
-  <h1><a href="https://tldr.sh/"><img alt="tldr-pages" src="images/banner.png" width=600/></a></h1>
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/tldr)
 
-[![Build status][github-actions-image]][github-actions-url]
-[![Matrix chat][matrix-image]][matrix-url]
-[![Merged PRs][prs-merged-image]][prs-merged-url]
-[![GitHub contributors][contributors-image]][contributors-url]
-[![license][license-image]][license-url]
-[![Mastodon][mastodon-image]][mastodon-url]
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-[github-actions-url]: https://github.com/tldr-pages/tldr/actions
-[github-actions-image]: https://img.shields.io/github/actions/workflow/status/tldr-pages/tldr/ci.yml?branch=main&label=Build
-[matrix-url]: https://matrix.to/#/#tldr-pages:matrix.org
-[matrix-image]: https://img.shields.io/matrix/tldr-pages:matrix.org?label=Chat+on+Matrix
-[prs-merged-url]: https://github.com/tldr-pages/tldr/pulls?q=is:pr+is:merged
-[prs-merged-image]: https://img.shields.io/github/issues-pr-closed-raw/tldr-pages/tldr.svg?label=Merged+PRs&color=green
-[contributors-url]: https://github.com/tldr-pages/tldr/graphs/contributors
-[contributors-image]: https://img.shields.io/github/contributors-anon/tldr-pages/tldr.svg?label=Contributors
-[license-url]: https://github.com/tldr-pages/tldr/blob/main/LICENSE.md
-[license-image]: https://img.shields.io/badge/license-CC_BY_4.0-blue.svg?label=License
-[mastodon-url]: https://fosstodon.org/@tldr_pages
-[mastodon-image]: https://img.shields.io/badge/Mastodon-6364FF?logo=mastodon&logoColor=fff
-</div>
+## Architecture
 
-## What is tldr-pages?
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-The **tldr-pages** project is a collection of community-maintained help pages
-for command-line tools, that aims to be a simpler, more approachable complement
-to traditional [man pages](https://en.wikipedia.org/wiki/Man_page).
+## Install
 
-Maybe you're new to the command-line world. Perhaps you're just a little rusty or can't always recall the arguments for commands like `lsof`, or `tar`?
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-It certainly doesn't help that, in the past, the first option explained in `man tar` was:
-
-```console
-$ man tar
-...
--b blocksize
-   Specify the block size, in 512-byte records, for tape drive I/O.
-   As a rule, this argument is only needed when reading from or writing to tape drives,
-   and usually not even then as the default block size of 20 records (10240 bytes) is very common.
-...
+```bash
+git clone https://github.com/Interested-Deving-1896/tldr.git
+cd tldr
 ```
 
-There is room for simpler help pages focused on practical examples.
-How about:
+## Usage
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/tldr-pages/tldr/blob/main/images/tldr-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/tldr-pages/tldr/blob/main/images/tldr-light.png">
-    <img alt="Screenshot of the tldr client displaying the tar command." src="https://github.com/tldr-pages/tldr/blob/main/images/tldr-dark.png">
-</picture>
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-This repository is just that: an ever-growing collection of examples
-for the most common UNIX, Linux, macOS, FreeBSD, NetBSD, OpenBSD,
-SunOS, Android, Windows, Cisco IOS, and DOS command-line tools.
+## Configuration
 
-## How do I use it?
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-> [!TIP]
-> For browsing without installing a client on your computer,
-> see the web client at <https://tldr.inbrowser.app> (with offline support using PWA).
+## CI
 
-There are several official clients available.
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-### Python client
+## Mirror chain
 
-The official [Python client](https://github.com/tldr-pages/tldr-python-client) can be installed from [PyPI](https://pypi.org/project/tldr/) via [pipx](https://github.com/pypa/pipx) (or [other package managers](https://github.com/tldr-pages/tldr-python-client#installation)):
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/tldr`](https://github.com/Interested-Deving-1896/tldr) and mirrored through:
 
-```shell
-pipx install tldr
+```
+Interested-Deving-1896/tldr  ──►  OpenOS-Project-OSP/tldr  ──►  OpenOS-Project-Ecosystem-OOC/tldr
 ```
 
-### Rust client
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-Linux and Mac users can also install the official [Rust Client](https://github.com/tldr-pages/tlrc) using [Homebrew](https://formulae.brew.sh/formula/tlrc), [Cargo](https://crates.io/crates/tlrc)
-(or [other package managers](https://github.com/tldr-pages/tlrc#installation) on other operating systems):
+## Contributors
 
-```shell
-brew install tlrc
-```
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-```shell
-cargo install tlrc --locked
-```
+## Origins
 
-Windows users can also install the official [Rust Client](https://github.com/tldr-pages/tlrc) using [Winget](https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/tldr-pages/tlrc) (or [other package managers](https://github.com/tldr-pages/tlrc#installation) on other operating systems):
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-```shell
-winget install tldr-pages.tlrc
-```
+## Resources
 
-### Node.js client
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-Alternatively, you can also use the official [Node.js client](https://github.com/tldr-pages/tldr-node-client), although it has fallen behind in updates:
+## License
 
-```shell
-npm install -g tldr
-```
-
-Then you have direct access to simplified, easy-to-read help for commands, such as `tar`,
-accessible through typing `tldr tar` instead of the standard `man tar`.
-
-If you don't want to install any software, check out the [PDF version](https://github.com/tldr-pages/tldr/releases/latest/download/tldr-book.pdf) instead.
-
-> [!NOTE]
-> PDFs for translations are available for most languages. You can find them in the release assets of the [latest release](https://github.com/tldr-pages/tldr/releases/latest).
-
-There are also **various other clients** provided by the community,
-both for the command-line and for other platforms.
-For a comprehensive list of clients, head over to our [Wiki](https://github.com/tldr-pages/tldr/wiki/Clients).
-
-## How do I contribute to tldr-pages?
-
-All contributions are welcome!
-
-Some ways to contribute include:
-
-- Adding your favorite command that isn't covered.
-- Adding examples or improving the content of an existing page.
-- Adding requested pages from our issues with the [help wanted](https://github.com/tldr-pages/tldr/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) label.
-- Translating pages into different languages.
-
-All `tldr` pages are written in Markdown so that they can be edited quite easily and changes can be submitted in
-pull requests here using Git on the command-line or
-using the GitHub web interface.
-
-We strive to maintain a [welcoming and collaborative](GOVERNANCE.md) community.
-If it's your first time contributing, have a look at the [contributing guidelines](CONTRIBUTING.md), and go ahead!
-
-If you'd like to contribute to translations, you can visit <https://lukwebsforge.github.io/tldri18n/>
-to see the overall progress of all translations, and which translations are missing or outdated.
-
-You are also welcome to join us on the [matrix chatroom](https://matrix.to/#/#tldr-pages:matrix.org) and the [matrix space](https://matrix.to/#/!mynHqJpTGlenkzgKGM:matrix.org) that contains all tldr related chatrooms!
-
-## Similar projects
-
-- [cheat.sh](https://cheat.sh/)
-  Aggregates cheat sheets from multiple sources (including tldr-pages)
-  into 1 unified interface.
-
-- [devhints](https://devhints.io/)
-  Rico's cheatsheets are not just focused on the command-line and
-  include a plethora of other cheatsheets related to programming.
-
-- [eg](https://github.com/srsudar/eg)
-  provides detailed examples with explanations on the command-line.
-  Examples come from the repository, but `eg` supports displaying
-  custom examples and commands alongside the defaults.
-
-- [kb](https://github.com/gnebbia/kb)
-  is a minimalist command-line knowledge base manager.
-  kb can be used to organize your notes and cheatsheets in a minimalist
-  and clean way. It also supports non-text files.
-
-- [navi](https://github.com/denisidoro/navi)
-  is an interactive cheatsheet tool, which allows you to browse through
-  specific examples or complete commands on the fly.
-
-- [Cheat](https://github.com/cheat/cheat)
-  allows you to create and view interactive cheatsheets on the command-line.
-  It was designed to help remind Unix system administrators of options
-  for commands that they use frequently, but not frequently enough to remember.
-
-- [Command Line Interface Pages](https://github.com/command-line-interface-pages)
-  allows you to write standardized help pages for CLI, directories, and configs.
-
-- [bropages (deprecated)](https://github.com/pombadev/bropages)
-  are a highly readable supplement to man pages.
-  It shows concise, common-case examples for Unix commands.
-  The examples are submitted by the user base, and can be voted up or down;
-  the best entries are what people see first when they look up a command.
-
-## What does "tldr" mean?
-
-TL;DR stands for "Too Long; Didn't Read".
-It originated as Internet slang, where it is used to indicate that a long text
-(or parts of it) has been skipped as too lengthy.
-Read more in How-To Geek's [article](https://www.howtogeek.com/435266/what-does-tldr-mean-and-how-do-you-use-it/).
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
